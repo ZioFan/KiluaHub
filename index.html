@@ -1,0 +1,85 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Anime Slash Intro</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }body {
+  height: 100vh;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+  overflow: hidden;
+  color: white;
+  position: relative;
+}
+
+.container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.container p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.socials {
+  margin-top: 1.5rem;
+}
+
+.socials a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ff5050;
+}
+
+.slash-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  background: url('https://media.tenor.com/n4I3Uczdlz0AAAPo/anime-slash.gif') center/cover no-repeat;
+  animation: fadeOut 2s ease 2.5s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="slash-animation"></div>  <div class="container">
+    <h1>Yo, I'm GLEON</h1>
+    <p>Coder | Designer | Dreamer</p>
+    <div class="socials">
+      <a href="#">🐦 Twitter</a>
+      <a href="#">📸 IG</a>
+      <a href="#">💻 GitHub</a>
+    </div>
+  </div>
+</body>
+</html>
